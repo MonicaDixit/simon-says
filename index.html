@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simon says</title>
+    <style>
+        
+        .big, .small {
+            border: 1px solid black;
+        }
+        .big {
+            background-color: white;
+            height: 400px;
+            width: 400px;
+        }
+
+        .small-red {
+            background-color: red;
+        }
+
+        .small-green {
+            background-color: green;
+        }
+
+        .small-yellow {
+            background-color: yellow;
+        }
+
+        .small-blue {
+            background-color: blue;
+        }
+
+        .small {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+         .flex-container2 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex-container3 {
+            display:flex;
+            flex-direction: column;
+        }
+
+        .magic {
+            border: 10px solid white;
+        }
+
+        .original {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="big"></div>
+        <div class="big flex-container3">
+            <div class="big flex-container2">
+                <div class="small small-red"></div>
+                <div class="small small-green"></div>
+            </div>
+            <div class="big flex-container2">
+                <div class="small small-blue"></div>
+                <div class="small small-yellow"></div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
